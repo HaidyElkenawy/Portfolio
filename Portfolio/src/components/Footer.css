@@ -1,0 +1,112 @@
+/* src/components/Footer.css */
+
+.footer {
+  width: 100%;
+  background-color: var(--primary);
+  border-top: 1px solid var(--secondary);
+  box-shadow: 0px -4px 16px rgba(219, 39, 119, 0.25); /* Subtle pink glow matching navbar */
+  padding: 24px 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Section */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--tertiary);
+  margin: 0;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Right Section */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: var(--tertiary);
+  transform: translateY(-2px);
+}
+
+/* Scroll To Top Button */
+.scroll-top-btn {
+  background-color: var(--neutral2);
+  border: 1px solid var(--neutral);
+  color: var(--tertiary);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.scroll-top-btn:hover {
+  border-color: var(--tertiary);
+  background-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(245, 158, 11, 0.2);
+}
+
+/* Responsive view for mobile screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 0 24px;
+  }
+
+  .footer-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

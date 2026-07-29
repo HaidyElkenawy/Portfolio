@@ -1,0 +1,9 @@
+/* src/App.css */
+:root {
+  --primary: #01040C;   /* Deep Dark Background */
+  --neutral2: #0A0D14;  /* Dark Neutral / Card Container Backgrounds */
+  --secondary: #DB2777; /* Accent Pink */
+  --tertiary: #F59E0B;  /* Accent Amber / Gold */
+  --neutral: #787778;   /* Muted Slate Gray */
+  --text: #F5F5F5;      /* Main Off-White Text */
+}
