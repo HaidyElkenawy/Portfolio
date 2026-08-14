@@ -165,8 +165,8 @@
   flex: 1.2; /* Gives the image slightly more width than the text */
   border-radius: 12px;
   overflow: hidden;
-  background-color: var(--neutral2);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: var(--primary);
+  border: 1px solid var(--neutral2);
   display: flex;
   align-items: center;
   justify-content: center;

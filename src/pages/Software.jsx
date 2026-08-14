@@ -1,5 +1,8 @@
 
 import './software.css';
+import rehlaImg from '../assets/Rehla.jpeg';
+import socialImg from '../assets/Rehla.jpeg';
+
 
 // Helper component to render the custom SVGs for the cards
 const StackIcon = ({ type, colorClass }) => {
@@ -82,7 +85,73 @@ export default function Software() {
         </div>
       </div>
 
-      
+      {/* Featured Projects Showcase Section */}
+      <section className="projects-section">
+        
+        {/* Project 1: Rehla (Image Left, Text Right) */}
+        <div className="project-row">
+          <div className="project-image-wrapper">
+            {/* Replace with your actual image path */}
+            {rehlaImg && <img src={rehlaImg} alt="Rehla Travel Ecosystem" />}
+            <div style={{ width: '100%', height: '350px', backgroundColor: '#1a1a1a' }}></div> {/* Placeholder */}
+          </div>
+          
+          <div className="project-content">
+            <span className="project-tag">&lt;Project Name="Rehla" /&gt;</span>
+            <h3 className="project-title">All-in-One Travel<br />Ecosystem</h3>
+            
+            <div className="project-details">
+              <span className="detail-item">
+                <span className="detail-label">Stack:</span> MERN Stack (MongoDB, Express.js, React, Node.js), Tailwind CSS
+              </span>
+              <span className="detail-item">
+                <span className="detail-label">Team Structure:</span> 10-Member Software Engineering Team
+              </span>
+              <span className="detail-item">
+                <span className="detail-label">Frontend Development:</span> Built modular, high-performance UI structures styled with Tailwind CSS.
+              </span>
+              <span className="detail-item">
+                <span className="detail-label">System Connectivity:</span> Connected frontend layouts to secure backend REST endpoints for efficient data handling.
+              </span>
+            </div>
+            
+            <a href="#rehla-repo" className="project-link">
+              View Repository →
+            </a>
+          </div>
+        </div>
+
+        {/* Project 2: Social Media Platform (Text Left, Image Right) */}
+        <div className="project-row reverse">
+          <div className="project-image-wrapper">
+             {/* Replace with your actual image path */}
+            {socialImg && <img src={socialImg} alt="Social Media Platform" />}
+            <div style={{ width: '100%', height: '350px', backgroundColor: '#1a1a1a' }}></div> {/* Placeholder */}
+          </div>
+          
+          <div className="project-content">
+            <span className="project-tag">&lt;Project Name="SocialMedia Platform" /&gt;</span>
+            <h3 className="project-title">Full-Stack<br />Social Media Platform</h3>
+            
+            <div className="project-details">
+              <span className="detail-item">
+                <span className="detail-label">Backend Framework:</span> Express.js (Modular REST APIs)
+              </span>
+              <span className="detail-item">
+                <span className="detail-label">Database:</span> MongoDB / Mongoose (Data modeling & indexing)
+              </span>
+              <span className="detail-item">
+                <span className="detail-label">Security:</span> JWT & bcrypt (Authentication & session management)
+              </span>
+            </div>
+            
+            <a href="#social-repo" className="project-link">
+              View Repository →
+            </a>
+          </div>
+        </div>
+
+      </section>
 
       {/* Core Stack Section */}
       <section className="core-stack-section">
