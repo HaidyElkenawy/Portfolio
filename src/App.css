@@ -7,3 +7,11 @@
   --neutral: #787778;   /* Muted Slate Gray */
   --text: #F5F5F5;      /* Main Off-White Text */
 }
+
+body, html, #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;          /* Overrides place-items: center or flex centering */
+  text-align: left;
+}

@@ -1,0 +1,402 @@
+/* uiux.css */
+
+.uiux-container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-color: var(--primary);
+  color: var(--text);
+  box-sizing: border-box;
+  padding: 60px 56px 80px 56px;
+  display: block;
+  text-align: left;
+}
+
+.uiux-section {
+  width: 100%;
+  max-width: 850px;
+  margin: 0;                /* Space below Hero section */
+  text-align: left;
+  margin-bottom: 180px;      /* Space below Hero section */
+  margin-top: 100px;         /* Space below Hero section */
+}
+
+.uiux-title {
+  font-size: 56px;
+  font-weight: 680;              /* Reduced from 800 */
+  line-height: 1.15;
+  color: var(--text);
+  margin: 0 0 16px 0;
+  letter-spacing: -0.5px;        /* Tighter letter spacing */
+  text-align: left;
+}
+
+.gradient-text {
+  font-weight: 680;              /* Matches title weight */
+  background: linear-gradient(90deg, var(--secondary) 0%, var(--tertiary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
+
+.uiux-subtitle {
+  font-size: 16px;
+  color: var(--neutral);
+  line-height: 1.6;
+  max-width: 680px;
+  font-weight: 400;              /* Reduced from 400 for a sleeker feel */
+  letter-spacing: -0.5px;        /* Subtle decrease */
+  margin: 0;
+  text-align: left;
+}
+
+
+
+/* --- MAIN CONTENT WRAPPER --- */
+.uiux-content-wrapper {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+  max-width: 1400px; /* Ensures the whole section stays contained */
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+/* --- LEFT COLUMN: TENURE (FIXED WIDTH) --- */
+.left-column {
+  width: 500px; 
+  flex-shrink: 0; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- RIGHT COLUMN: CASE STUDIES (FLUID WIDTH) --- */
+.right-column {
+  flex-grow: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inner Grid for the 2 Case Study Cards */
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  flex-grow: 1; /* <-- This forces the grid to stretch down to the exact bottom edge of the left column */
+}
+
+
+
+/* Section Header Titles */
+.uiux-col-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.icon-pink { color: var(--secondary); font-size: 20px; }
+.icon-amber { color: var(--tertiary); font-size: 20px; }
+
+
+/* --- TENURE CARDS --- */
+.tenure-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1; /* Pushes the wrapper to the absolute bottom of the grid */
+}
+
+.tenure-card {
+  background-color: var(--neutral2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  flex: 1; /* Forces both cards to stretch equally to fill the wrapper */
+  justify-content: center; /* Keeps the text vertically centered in the taller cards */
+}
+
+.tenure-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tenure-company {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.tenure-role {
+  font-size: 13px;
+  color: var(--neutral);
+  margin: 0;
+  font-family: monospace;
+}
+
+.tenure-desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text);
+  opacity: 0.85;
+  margin: 0;
+}
+
+.badge-current {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: var(--tertiary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.tenure-date {
+  font-size: 11px;
+  color: var(--neutral);
+  font-weight: 500;
+  font-family: monospace;
+}
+
+
+
+/* --- CASE STUDY CARDS --- */
+
+.case-study-card {
+  background-color: var(--neutral2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%; /* Keeps the cards perfectly filling the grid */
+}
+
+.case-study-image-wrapper {
+  width: 100%;
+  height: 240px;
+  background-color: #fef5ed; /* Adjust per image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.case-study-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.case-study-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Pushes the link to the bottom */
+}
+
+.case-tag-amber {
+  color: var(--tertiary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.case-tag-pink {
+  color: var(--secondary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.case-study-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.case-study-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--neutral);
+  margin: 0 0 32px 0;
+}
+
+.case-study-link {
+  margin-top: auto;
+  color: var(--secondary);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Responsive Stacking for Tablets/Phones */
+@media (max-width: 1024px) {
+  .uiux-content-wrapper {
+    flex-direction: column; /* Stacks Left and Right columns */
+  }
+  .left-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-studies-grid {
+    grid-template-columns: 1fr; /* Stacks the two project cards on mobile */
+  }
+}
+
+
+
+
+
+
+
+/* ========================================= */
+/* --- PROCESS SECTION (DESIGN & ENG) --- */
+/* ========================================= */
+
+.process-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 100px; /* Space between the upper grids and this section */
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  box-sizing: border-box;
+}
+
+.process-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+.highlight {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.process-title .highlight {
+  color: var(--tertiary);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+}
+
+.process-card {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px; /* Space for the border */
+  position: relative;
+  text-align: left;
+}
+
+/* Fading Left Borders */
+.process-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  border-radius: 2px;
+}
+
+.process-card.step-1::before {
+  background: linear-gradient(180deg, var(--secondary) 0%, transparent 100%);
+}
+
+.process-card.step-2::before {
+  background: linear-gradient(180deg, var(--tertiary) 0%, transparent 100%);
+}
+
+.process-card.step-3::before {
+  background: linear-gradient(180deg, var(--secondary) 0%, transparent 100%);
+}
+
+.process-num {
+  font-size: 36px;
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.15); /* Faded gray look */
+  font-weight: 600;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+.process-step-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 24px 0;
+}
+
+.process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.process-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+/* Custom Checkmark Icon */
+.check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid var(--tertiary);
+  color: var(--tertiary);
+  font-size: 9px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+/* Responsive Stacking */
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+

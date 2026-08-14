@@ -10,12 +10,12 @@
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 48px;
+  width: 100%;
+  padding: 0 24px; /* Forces exactly 24px from both left and right screen edges */
+  box-sizing: border-box; /* Ensures padding is calculated inside the 100% width */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /* Left Section */
