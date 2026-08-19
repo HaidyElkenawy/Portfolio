@@ -1,5 +1,5 @@
 
-import './software.css';
+import './Software.css';
 import rehlaImg from '../assets/Rehla.jpeg';
 import socialImg from '../assets/Rehla.jpeg';
 

@@ -1,7 +1,7 @@
 
-import './uiux.css';
+import './UIUX.css';
 import rightHeroImg from '../assets/background.png';                 
-import eslKidsImage from '../assets/Esl.png';
+import eslKidsImage from '../assets/ESL.png';
 import hayatImage from '../assets/Hayat.png';
 
 export default function UIUX() {
