@@ -1,6 +1,6 @@
 
 // Change it to this exact casing:
-import "./uiux.css";
+import "./UIUX.css";
 import rightHeroImg from '../assets/background.png';                 
 import eslKidsImage from '../assets/ESL.png';
 import hayatImage from '../assets/Hayat.png';
