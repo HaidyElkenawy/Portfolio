@@ -93,7 +93,7 @@ export default function Software() {
           <div className="project-image-wrapper">
             {/* Replace with your actual image path */}
             {rehlaImg && <img src={rehlaImg} alt="Rehla Travel Ecosystem" />}
-            <div style={{ width: '100%', height: '350px', backgroundColor: '#1a1a1a' }}></div> {/* Placeholder */}
+            <div style={{ width: '100%', height: '350px' }}></div> {/* Placeholder */}
           </div>
           
           <div className="project-content">

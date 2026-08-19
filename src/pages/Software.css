@@ -44,11 +44,6 @@
   margin: 0;
 }
 
-
-
-
-
-
 /* --- CORE STACK SECTION --- */
 .core-stack-section {
   width: 100%;
@@ -131,21 +126,18 @@
   }
 }
 
-
-
-
 /* ========================================= */
 /* --- FEATURED PROJECTS SHOWCASE --- */
 /* ========================================= */
 
 .projects-section {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: var(--primary); /* Full-width background */
   padding: 80px 24px;
   display: flex;
   flex-direction: column;
-  gap: 120px; /* Large spacing between the two distinct projects */
+  align-items: center; /* Centers the inner rows */
+  gap: 120px; 
   box-sizing: border-box;
 }
 
@@ -154,6 +146,7 @@
   align-items: center;
   gap: 64px;
   width: 100%;
+  max-width: 1200px; /* Constrains content width so it doesn't stretch on large screens */
 }
 
 /* Flips the layout so the image is on the right for the second project */

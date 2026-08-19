@@ -28,9 +28,7 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/vr-dev" className={({ isActive }) => (isActive ? 'active' : '')}>
-            VR Dev
-          </NavLink>
+          
         </li>
       </ul>
     </nav>
